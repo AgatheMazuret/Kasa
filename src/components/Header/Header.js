@@ -2,16 +2,19 @@ import React from 'react';
 import logo from '../../assets/LOGO.png';
 
 // Constante pour le logo kasa
-const Logokasa = () => {
+const LogoNav = () => {
     return (
-        <div>
+        <div className='header'>
+        <div className='logo'>
             <img src={logo} alt='Logo Kasa' />
-        <h2>Accueil</h2>
-        <h2>A Propos</h2>
-    </div>
+            </div>
+        <div className='nav'>
+        <h2 className='accueil'>Accueil</h2>
+        <h2 className='aPropos'>A Propos</h2>
+    </div></div>
     );
 };
 
 
-export default Logokasa
+export default LogoNav
 

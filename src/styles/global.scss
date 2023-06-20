@@ -1,19 +1,38 @@
 //Constantes
 $primary: #c6538c;
 
-body{
-    max-width: 1440px;
-    margin: 0 auto;
-    font-family: Montserrat;
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: Montserrat;
 }
 
-nav{
+.header {
+    width: 100%;
+    display: flex;
+    padding: 30px 20px 50px 30px;
+
+  .logo {
+    display: flex;
+    justify-content: baseline;
+    width: 25%;
+  }
+  .nav {
+    display: flex;
+    justify-content: end;
     color: $primary;
-    font-size: 24px;
-    text-align: right;
-    
-    &:hover {
-        text-decoration: underline;
+    width: 70%;
+    gap: 3%;
+
+
+    .accueil,
+    .aPropos {
+      font-size: 24px;
+
+      &:hover {
+        text-decoration: underline $primary;
         cursor: pointer;
+      }
     }
+  }
 }
