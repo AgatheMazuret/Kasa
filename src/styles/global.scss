@@ -1,16 +1,16 @@
 // Constantes
-$primary: #c6538c;
+$primary: #FF6060;
 
 body {
   max-width: 1440px;
   margin: 0 auto;
   font-family: Montserrat;
 }
-
+// HEADER
 .header {
   width: 100%;
   display: flex;
-  padding: 30px 20px 50px 0;
+  padding: 30px 20px 55px 0;
 
   .logo {
     display: flex;
@@ -28,6 +28,7 @@ body {
     .accueil,
     .aPropos {
       font-size: 24px;
+      
 
       &:hover {
         text-decoration: underline $primary;
@@ -36,3 +37,5 @@ body {
     }
   }
 }
+// FIN DU HEADER
+
