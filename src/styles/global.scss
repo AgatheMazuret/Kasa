@@ -1,0 +1,19 @@
+//Constantes
+$primary: #c6538c;
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: Montserrat;
+}
+
+nav{
+    color: $primary;
+    font-size: 24px;
+    text-align: right;
+    
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
