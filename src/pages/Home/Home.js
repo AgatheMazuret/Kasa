@@ -1,6 +1,6 @@
 import Cart from '../../components/Cart/Cart'
 import Header from '../../components/Header/Header'
-
+import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
   return (
@@ -8,6 +8,7 @@ const Home = () => {
     <>
      <Header />
      <Cart />
+     <Footer />
     </>
   );
 };
