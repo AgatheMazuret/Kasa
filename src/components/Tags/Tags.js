@@ -10,10 +10,10 @@ function Tags({ logement }) {
   return (
     <>
       <p>
-        Coucou <span> Toi</span>
+      <span></span>
       </p>
 
-      <span>YEAAAHhh</span>
+      <span></span>
 
       <p>{tagMap}</p>
     </>

@@ -1,9 +1,6 @@
 import React from "react";
 import "../../styles/global.scss";
 
-Headers.render(
-  <app />
-)
 
 function Error() {
   return (
