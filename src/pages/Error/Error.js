@@ -1,5 +1,6 @@
 import React from "react";
-import "../../styles/global.scss";
+import "../Error/error.scss";
+import { Link } from "react-router-dom";
 
 
 function Error() {
@@ -8,7 +9,9 @@ function Error() {
       <section>
         <h1>404</h1>
         <h2>Oups! La page que vous demandez n'existe pas.</h2>
-        <span>Retourner sur la page d’accueil</span>
+        <Link to="/" className="accueil">
+        Retourner sur la page d’accueil
+        </Link>
       </section>
     </>
   );

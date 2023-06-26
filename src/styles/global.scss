@@ -10,48 +10,7 @@ body {
   margin: 0 auto;
   font-family: Montserrat;
 }
-// HEADER
-.header {
-  width: 100%;
-  height: 68px;
-  display: flex;
-  padding: 45px 20px 55px 0;
 
-  .logo {
-    display: flex;
-    justify-content: flex-start;
-    width: 25%;
-    margin-left: 40px;
-
-    @media (max-width: 560px) {
-      width: 145px;
-      height: 46px;
-    }
-  }
-
-  .nav {
-    display: flex;
-    justify-content: flex-end;
-    color: $primary;
-    width: 70%;
-    gap: 3%;
-
-    .accueil,
-    .aPropos {
-      font-size: 24px;
-
-      &:hover {
-        text-decoration: underline $primary;
-        cursor: pointer;
-      }
-
-      @media (max-width: 560px) {
-        font-size: 15px;
-      }
-    }
-  }
-}
-// FIN DU HEADER
 
 //CART
 .backgroundCart {
@@ -122,77 +81,6 @@ body {
 }
 // FIN DU CART
 
-// LOGEMENTS
-.logement {
-  h1 {
-    font-size: 36px;
-  }
-}
 
-// FIN LOGEMENTS
 
-//FOOTER
-.logoFooter {
-  width: 100%;
-  height: 180px;
-  background-color: black;
-  text-align: center;
-  margin-top: 50px;
-  padding-bottom: 30px;
 
-  img {
-    margin-top: 65px;
-  }
-
-  p {
-    font-size: 24px;
-    color: white;
-    margin-top: 35px;
-
-    @media (max-width: 560px) {
-      font-size: 12px;
-    }
-  }
-}
-
-//FIN du FOOTER
-
-//PAGE ERREUR
-section {
-  color: $primary;
-  text-align: center;
-
-  h1 {
-    font-size: 255px;
-    margin-bottom: 135px;
-
-    @media (max-width: 560px) {
-      font-size: 96px;
-      margin-bottom: 113px;
-    }
-  }
-
-  h2 {
-    font-size: 36px;
-    margin-bottom: 135px;
-
-    @media (max-width: 560px) {
-      font-size: 18px;
-      margin-bottom: 113px;
-    }
-  }
-
-  span {
-    font-size: 26px;
-
-    &:hover {
-      text-decoration: underline $primary;
-      cursor: pointer;
-    }
-
-    @media (max-width: 560px) {
-      font-size: 14px;
-    }
-  }
-}
-//FIN DE LA PAGE D'ERREUR

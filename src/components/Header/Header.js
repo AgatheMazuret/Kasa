@@ -14,7 +14,7 @@ const LogoNav = () => {
         <Link to="/" className="accueil">
           Accueil
         </Link>
-        <Link to="/a-propos" className="accueil">
+        <Link to="/a-propos" className="aPropos">
           A Propos
         </Link>
       </div>
