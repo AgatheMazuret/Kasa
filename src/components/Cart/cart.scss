@@ -1,0 +1,50 @@
+@import "../../styles/global.scss";
+
+//CART
+.backgroundCart {
+  background-color: #f6f6f6;
+  width: 90%;
+  height: auto;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 45px 0 56px 0;
+
+  .cart {
+    width: 340px;
+    height: 340px;
+    display: flex;
+    align-items: flex-end;
+  
+  
+   p {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: auto;
+    margin-left: -10px;
+    text-align: left;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+  
+
+    @media (max-width: 560px) {
+      font-size: 14px;
+    }
+  }
+}
+}
+// FIN DU CART

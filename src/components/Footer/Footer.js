@@ -1,5 +1,7 @@
 import React from "react";
-import LogoFooter from '../../assets/LOGOlogo_kasa_footer.png'
+import LogoFooter from '../../assets/LOGOlogo_kasa_footer.png';
+import "../Footer/Footer.scss";
+
 const Footer = () => {
     return (
         <div className="footer">

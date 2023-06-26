@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Tags from "../../components/Tags/Tags";
 import Error from "../Error/Error";
+import "../House/House.scss";
 
 function House() {
   // Récupération de l'id dans l'url
@@ -34,6 +35,7 @@ function House() {
       <section>
         <div className="logement">
           <h1>{logement.title}</h1>
+          <p>{logement.location}</p>
           <Tags logement={logement} />
         </div>
       </section>
