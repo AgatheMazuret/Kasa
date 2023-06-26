@@ -18,8 +18,15 @@ body {
     justify-content: flex-start; 
     width: 25%;
     margin-left: 40px;
+
+    @media (max-width: 560px) {
+      width: 145px;
+      height: 46px;
+    }
   }
 
+
+  
   .nav {
     display: flex;
     justify-content: flex-end; 
@@ -35,6 +42,10 @@ body {
       &:hover {
         text-decoration: underline $primary;
         cursor: pointer;
+      }
+
+      @media (max-width: 560px) {
+        font-size: 12px;
       }
     }
   }
@@ -85,6 +96,18 @@ body {
 }
 // FIN DU CART
 
+// LOGEMENTS
+.logement {
+  h1{
+    font-size: 36px;
+  }
+}
+
+
+// FIN LOGEMENTS
+
+
+
 //FOOTER
 .logoFooter{
   width: 100%;
@@ -105,6 +128,10 @@ body {
     color: white;
     margin-top: 35px;
 
+    @media (max-width: 560px) {
+      font-size: 12px;
+    }
+
   }
 }
 
@@ -119,11 +146,21 @@ section {
   h1{
     font-size: 255px;
     margin-bottom: 135px;
+
+    @media (max-width: 560px) {
+      font-size: 96px;
+    }
+
   }
 
   h2{
     font-size: 36px;
     margin-bottom: 135px;
+
+    @media (max-width: 560px) {
+      font-size: 18px;
+    }
+
   }
 
   span {
@@ -133,6 +170,11 @@ section {
       text-decoration: underline $primary;
       cursor: pointer;
     }
+
+    @media (max-width: 560px) {
+      font-size: 14px;
+    }
+
   }
 }
 //FIN DE LA PAGE D'ERREUR

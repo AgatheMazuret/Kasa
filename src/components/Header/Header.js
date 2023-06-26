@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/LOGO.png';
+import logo from '../../assets/LOGO.svg';
 
 // Constante pour le logo kasa
 const LogoNav = () => {

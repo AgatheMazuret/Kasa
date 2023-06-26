@@ -34,9 +34,10 @@ console.log(logement)
   return (
     <>
       <section>
+<div className="logement">
         <h1>{logement.title}</h1>
         <Tags logement={logement} />
-      </section>
+      </div></section>
     </>
   );
 }
