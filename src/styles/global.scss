@@ -1,5 +1,9 @@
 // Constantes
-$primary: #FF6060;
+$primary: #ff6060;
+
+a {
+  text-decoration: none;
+}
 
 body {
   max-width: 1440px;
@@ -15,7 +19,7 @@ body {
 
   .logo {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     width: 25%;
     margin-left: 40px;
 
@@ -25,11 +29,9 @@ body {
     }
   }
 
-
-  
   .nav {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     color: $primary;
     width: 70%;
     gap: 3%;
@@ -37,7 +39,6 @@ body {
     .accueil,
     .aPropos {
       font-size: 24px;
-      
 
       &:hover {
         text-decoration: underline $primary;
@@ -45,7 +46,7 @@ body {
       }
 
       @media (max-width: 560px) {
-        font-size: 12px;
+        font-size: 15px;
       }
     }
   }
@@ -54,62 +55,84 @@ body {
 
 //CART
 .backgroundCart {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   width: 90%;
-  height: 0 auto;
+  height: auto;
   border-radius: 25px;
   display: flex;
   justify-content: center;
   gap: 60px;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: auto;
   padding: 56px 0 56px 0;
 
-  .cart{
+  .cart {
     width: 340px;
     height: 340px;
     border-radius: 10px;
-    background: rgb(128,43,43);
-    background: -moz-linear-gradient(0deg, rgba(128,43,43,1) 0%, rgba(255,96,96,1) 31%);
-    background: -webkit-linear-gradient(0deg, rgba(128,43,43,1) 0%, rgba(255,96,96,1) 31%);
-    background: linear-gradient(0deg, rgba(128,43,43,1) 0%, rgba(255,96,96,1) 31%);
+    background: rgb(128, 43, 43);
+    background: -moz-linear-gradient(
+      0deg,
+      rgba(128, 43, 43, 1) 0%,
+      rgba(255, 96, 96, 1) 31%
+    );
+    background: -webkit-linear-gradient(
+      0deg,
+      rgba(128, 43, 43, 1) 0%,
+      rgba(255, 96, 96, 1) 31%
+    );
+    background: linear-gradient(
+      0deg,
+      rgba(128, 43, 43, 1) 0%,
+      rgba(255, 96, 96, 1) 31%
+    );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#802b2b",endColorstr="#ff6060",GradientType=1);
-    
+
+    @media (max-width: 560px) {
+      width: 335px;
+      height: 225px;
+    }
   }
 
-  img{
+  img {
     width: 300px;
     height: 240px;
     object-fit: cover;
     border-radius: 10px;
     margin-top: 20px;
+
+    @media (max-width: 560px) {
+      width: 90%;
+      height: 150px;
+    }
   }
 
-  h2{
+  h2 {
     font-size: 16px;
     width: 55%;
-    height: 0 auto;
+    height: auto;
     color: white;
     text-align: left;
     margin-left: 22px;
+
+    @media (max-width: 560px) {
+      font-size: 14px;
+    }
   }
 }
 // FIN DU CART
 
 // LOGEMENTS
 .logement {
-  h1{
+  h1 {
     font-size: 36px;
   }
 }
 
-
 // FIN LOGEMENTS
 
-
-
 //FOOTER
-.logoFooter{
+.logoFooter {
   width: 100%;
   height: 180px;
   background-color: black;
@@ -117,13 +140,11 @@ body {
   margin-top: 50px;
   padding-bottom: 30px;
 
-
-  img{
+  img {
     margin-top: 65px;
-
   }
 
-  p{
+  p {
     font-size: 24px;
     color: white;
     margin-top: 35px;
@@ -131,19 +152,17 @@ body {
     @media (max-width: 560px) {
       font-size: 12px;
     }
-
   }
 }
 
 //FIN du FOOTER
 
-
-//PAGE ERREUR 
+//PAGE ERREUR
 section {
   color: $primary;
   text-align: center;
 
-  h1{
+  h1 {
     font-size: 255px;
     margin-bottom: 135px;
 
@@ -151,10 +170,9 @@ section {
       font-size: 96px;
       margin-bottom: 113px;
     }
-
   }
 
-  h2{
+  h2 {
     font-size: 36px;
     margin-bottom: 135px;
 
@@ -162,7 +180,6 @@ section {
       font-size: 18px;
       margin-bottom: 113px;
     }
-
   }
 
   span {
@@ -176,7 +193,6 @@ section {
     @media (max-width: 560px) {
       font-size: 14px;
     }
-
   }
 }
 //FIN DE LA PAGE D'ERREUR

@@ -1,14 +1,15 @@
-import Cart from '../../components/Cart/Cart'
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer';
+import Cart from "../../components/Cart/Cart";
+import image from "../../assets/photo_accueil.png";
 
 const Home = () => {
   return (
-
     <>
-     <Header />
-     <Cart />
-     <Footer />
+    <div>
+      <div>
+        <p style={{ backgroundImage:`url(${image})`}}>Chez vous ... </p>
+      </div>
+    </div>
+      <Cart />
     </>
   );
 };
