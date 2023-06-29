@@ -30,6 +30,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 25px;
+
+    @media (max-width: 560px) {
+      font-size: 24px;
+    }
     
     
   }

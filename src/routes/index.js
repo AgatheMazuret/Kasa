@@ -4,6 +4,7 @@ import House from "../pages/House/House";
 import Error from "../pages/Error/Error";
 import Blank from "../layouts/Blank";
 import Default from "../layouts/Default";
+import Apropos from "../pages/apropos/apropos";
 
 const Router = () => {
   return (
@@ -17,6 +18,7 @@ const Router = () => {
         <Route element={<Default />}>
           <Route path="/" element={<Home />} />
           <Route path="/logement/:id" element={<House />} />
+          <Route path="/apropos" element={<Apropos />} />
         </Route>
 
       </Routes>

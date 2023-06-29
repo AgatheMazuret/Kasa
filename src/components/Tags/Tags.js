@@ -1,3 +1,4 @@
+import React from "react";
 import "./Tags.scss";
 
 function Tags({ logement }) {
@@ -8,15 +9,10 @@ function Tags({ logement }) {
   ));
 
   return (
-    <>
-      <p>
-      <span></span>
-      </p>
-
-      <span></span>
-
+   <div className="tags">
       <p>{tagMap}</p>
-    </>
+      </div>
+    
   );
 }
 
