@@ -1,54 +1,80 @@
 @import "../../styles/global.scss";
 
-// Styles for the Dropdown component
 .dropdown {
+	width: 48%;
+}
+.dropdownBlock {
+  cursor: pointer;
+	background: $primary;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.title {
+	font-size: 18px;
+}
+.text {
+	padding: 35px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color: #F6F6F6;
+	display: none;
+	color: $primary;
+	font-size: 16px;
+	border-radius: 10px;
+  
+  .dropdown {
+    width: 48%;
+  }
+  .dropdownBlock {
+    background: $primary;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
     position: relative;
-    display: inline-block;
-    margin: 34px 0 60px 0;
-  
-    .containerDropdown {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    // Style the buttons
-    .dropdown-btn {
-      cursor: pointer;
-      background-color: $primary;
-      color: white;
-      border-radius: 10px;
-      padding: 10px 20px 0 10px;
-    }
-  
-    
-    i {
-      padding-left: 320px;
-      width: 32px;
-      height: 32px;
-    }
-  
-    
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      z-index: 1;
-     
-    }
-  
-    &.active {
-      .dropdown-content {
-        display: block;
-      }
-  
-      i {
-        width: 32px;
-        height: 32px;
-        transition: transform 0.3s;
-        flex-shrink: 0;
-        color: white;
-        transform: rotate(-90deg);
-      }
+  }
+  .title {
+    font-size: 18px;
+  }
+  .text {
+    padding: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #F6F6F6;
+    display: none;
+    color: $primary;
+    font-size: 16px;
+    border-radius: 10px;
+    p {
+      margin-top: 0;
     }
   }
+  .active {
+    display: block;
+    margin: 0;
+    margin-bottom: 0;
+    .text {
+      display: block;
+    }
+  }
+  
+	p {
+		margin-top: 0;
+	}
+}
+.active {
+	display: block;
+	margin: 0;
+	margin-bottom: 0;
+	.text {
+		display: block;
+	}
+}
+

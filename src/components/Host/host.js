@@ -1,18 +1,15 @@
+import React from "react";
 import "../Host/Host.scss";
-import Hosts from "../../data/logements.json"
 
-const Host = () => {
-    return (
-<div>
-      {data.map((item, index) => (
-        <div key={index}>
-          <h2>{item.titre}</h2>
-          <p>{item.contenu}</p>
-        </div>
-      ))}
+
+function Host({ host }) {
+
+  return (
+    <div>
+      <h2>{host.name}</h2>
+      <img src={host.picture} alt={host.name} />
     </div>
+  );
+}
 
-        
-    );
-
-};
+export default Host;

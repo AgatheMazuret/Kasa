@@ -11,15 +11,14 @@ function Dropdown({ title, content }) {
 
   return (
     <div className={`dropdown ${active && "active"}`} onClick={handleToogle}>
-      <div className="containerDropdown">
-      <div className="dropdown-btn" >
-        {title} <i class="fa-solid fa-chevron-up"></i>
+      <div className="dropdownBlock">
+        <div className="title">{title} </div>
+        <div><i className="fa-solid fa-chevron-down"></i></div>
       </div>
-      <div className="dropdown-content">{content}</div>
+        <div className="text">{content}</div>
       </div>
-    </div>
+    
   );
-
 }
 
 export default Dropdown;
