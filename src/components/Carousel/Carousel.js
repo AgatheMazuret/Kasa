@@ -1,27 +1,44 @@
 import "../Carousel/Carousel.scss";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const Carousel = () => {
-const [index, setIndex] = useState(0);
-const length = 3;
+const Carousel = ({ slides }) => {
+  const [current, setCurrent] = useState(0);
+  const lenght = slides.length;
 
-const handlePrevious = () => {
-const newIndex = index - 1;
-setIndex(newIndex < 0 ? length - 1 : newIndex);
-};
+  const nextSlide = () => {
+    setCurrent(current === lenght - 1 ? 0 : current + 1);
+  };
 
-const handleNext = () => {
-const newIndex = index + 1;
-setIndex(newIndex >= length ? 0 : newIndex);
-};
+  const prevSlide = () => {
+    setCurrent(current === 0 ? lenght - 1 : current - 1);
+  };
 
-return (
-<div className="carousel">
-<button onClick={handlePrevious}>Previous</button>
-<button onClick={handleNext}>Next</button>
-<p>{index}</p>
-</div>
-);
+  const display = slides.length <= 1 ? 'none' : 'block';
+
+
+  return (
+    <div className='carrousel'>
+        {slides.map((l, index) => {
+            return (
+                <div className={index === current ? 'slide-active' : 'slide'} key={index}>
+                    <div className='carteImageCarrousel' style={{ backgroundImage: `url(${l})` }}>
+
+                        <div className='partPrev'>
+                            <span onClick={prevSlide} style={{ display: display }} className='prev'><i className="fa-sharp fa-solid fa-chevron-left"></i></span>
+                        </div>
+                        <div className='counterImage'>
+                            <p className="counter">{current + 1} / {slides.length}</p>
+                        </div>
+                        <div className='partNext'>
+                            <span onClick={nextSlide} style={{ display: display }} className='next'><i className="fa-sharp fa-solid fa-chevron-right"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            )
+        })}
+    </div>
+)
 };
 
 export default Carousel;

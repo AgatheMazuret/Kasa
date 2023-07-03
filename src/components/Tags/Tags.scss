@@ -2,12 +2,11 @@
 
 .tags {
    display: flex;
-   flex-wrap: wrap;
-
    p {
-    display: inline-block;
-    background-color: $primary;
+    height: 25px;
+    gap: 10px;
     color: white;
+    background-color: $primary;
     padding: 5px 10px;
     border-radius: 10px;
     margin: 2px;

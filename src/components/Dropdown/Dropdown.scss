@@ -1,1 +1,54 @@
-@import "../../styles/global.scss"
+@import "../../styles/global.scss";
+
+// Styles for the Dropdown component
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 34px 0 60px 0;
+  
+    .containerDropdown {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    // Style the buttons
+    .dropdown-btn {
+      cursor: pointer;
+      background-color: $primary;
+      color: white;
+      border-radius: 10px;
+      padding: 10px 20px 0 10px;
+    }
+  
+    
+    i {
+      padding-left: 320px;
+      width: 32px;
+      height: 32px;
+    }
+  
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+     
+    }
+  
+    &.active {
+      .dropdown-content {
+        display: block;
+      }
+  
+      i {
+        width: 32px;
+        height: 32px;
+        transition: transform 0.3s;
+        flex-shrink: 0;
+        color: white;
+        transform: rotate(-90deg);
+      }
+    }
+  }

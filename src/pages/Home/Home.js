@@ -1,5 +1,6 @@
 import Cart from "../../components/Cart/Cart";
 import image from "../../assets/photo_accueil.png";
+import "../Home/Home.scss";
 import "../../styles/global.scss";
 
 const Home = () => {

@@ -2,33 +2,24 @@ import React, { useState } from "react";
 import "../Dropdown/Dropdown.scss";
 import logements from "../../data/logements.json";
 
-function DropdownHouse() {
-  const [description, setDescription] = useState("");
-  const [equipements, setEquipements] = useState("");
+function Dropdown({ title, content }) {
+  const [active, setActive] = useState(false);
 
-  const handleDescriptionClick = () => {
-    const firstLogement = logements[0]; 
-    setDescription(firstLogement.description);
-  };
-
-  const handleEquipementsClick = () => {
-    const firstLogement = logements[0]; 
-    setEquipements(firstLogement.equipements);
+  const handleToogle = () => {
+    setActive(!active);
   };
 
   return (
-    <div className="dropdownHouse">
-      <div className="dropdownHouse-btn" onClick={handleDescriptionClick}>
-        Description
+    <div className={`dropdown ${active && "active"}`} onClick={handleToogle}>
+      <div className="containerDropdown">
+      <div className="dropdown-btn" >
+        {title} <i class="fa-solid fa-chevron-up"></i>
       </div>
-      <div className="dropdownHouse-content">{description}</div>
-
-      <div className="dropdownHouse-btn" onClick={handleEquipementsClick}>
-        Equipements
+      <div className="dropdown-content">{content}</div>
       </div>
-      <div className="dropdownHouse-content">{equipements}</div>
     </div>
   );
+
 }
 
-export default DropdownHouse;
+export default Dropdown;

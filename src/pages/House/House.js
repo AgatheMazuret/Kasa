@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import Tags from "../../components/Tags/Tags";
 import Error from "../Error/Error";
 import "../House/House.scss";
+import Dropdown from "../../components/Dropdown/Dropdown";
+import Carousel from "../../components/Carousel/Carousel";
 
 function House() {
   // Récupération de l'id dans l'url
@@ -34,15 +36,17 @@ function House() {
     <>
       <section>
         <div className="logement">
+          <Carousel slides={logement.pictures} />
           <h1>{logement.title}</h1>
           <p>{logement.location}</p>
           <Tags logement={logement} />
+          <Dropdown title="Equipements" content={logement.equipments} />
+          <Dropdown title="Description" content={logement.description} />
         </div>
       </section>
     </>
   );
 }
-/*
-<Carousel slides={logement.pictures} />
-*/
+
+
 export default House;

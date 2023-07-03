@@ -8,12 +8,7 @@ function Tags({ logement }) {
     <p key={tag}>{logement.tags[index]}</p>
   ));
 
-  return (
-   <div className="tags">
-      <p>{tagMap}</p>
-      </div>
-    
-  );
+  return <div className="tags">{tagMap}</div>;
 }
 
 export default Tags;
