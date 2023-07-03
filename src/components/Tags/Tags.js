@@ -5,7 +5,7 @@ function Tags({ logement }) {
   // Je créer une constante avec le tableau des tags et uniquement cette valeur
   const tag = logement.tags;
   const tagMap = tag.map((tag, index) => (
-    <p key={tag}>{logement.tags[index]}</p>
+    <h2 key={tag}>{logement.tags[index]}</h2>
   ));
 
   return <div className="tags">{tagMap}</div>;

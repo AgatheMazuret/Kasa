@@ -1,1 +1,24 @@
 @import "../../styles/global.scss";
+
+.host {
+    display: flex;
+    width: 10%;
+
+  h2 {
+    
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: right;
+    padding-top: 10px;
+
+  }
+
+  img {
+
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+
+  }
+}

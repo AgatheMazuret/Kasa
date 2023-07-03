@@ -5,7 +5,7 @@ import "../Host/Host.scss";
 function Host({ host }) {
 
   return (
-    <div>
+    <div className="host">
       <h2>{host.name}</h2>
       <img src={host.picture} alt={host.name} />
     </div>

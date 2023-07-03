@@ -43,17 +43,18 @@ function House() {
       <section>
         <div className="logement">
           <Carousel slides={logement.pictures} />
-
+         
+            <Host host={logement.host} />
+          
           <h1>{logement.title}</h1>
           <p>{logement.location}</p>
 
           <Tags logement={logement} />
-<div className="toto">
-          <Dropdown title="Equipements" content={mapEquipments} />
-          <Dropdown title="Description" content={logement.description} />
+          
+          <div className="allDropdown">
+            <Dropdown title="Equipements" content={mapEquipments} />
+            <Dropdown title="Description" content={logement.description} />
           </div>
-
-          <Host host={logement.host} />
         </div>
       </section>
     </>
