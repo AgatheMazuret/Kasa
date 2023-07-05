@@ -1,8 +1,10 @@
 @import url(../apropos/apropos.scss);
+@import url(../../components/Dropdown/Dropdown.scss);
 
 .aProposPicture {
     display: flex;
     justify-content: center;
+    margin-bottom: 38px;
 
     img {
         width: 100%;
@@ -12,3 +14,4 @@
         filter: brightness(0.7);
     }
 }
+

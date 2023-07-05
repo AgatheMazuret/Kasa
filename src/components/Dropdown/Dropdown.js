@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Dropdown/Dropdown.scss";
-import logements from "../../data/logements.json";
+
 
 function Dropdown({ title, content }) {
   const [active, setActive] = useState(false);

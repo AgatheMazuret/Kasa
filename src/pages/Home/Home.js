@@ -1,5 +1,4 @@
 import Cart from "../../components/Cart/Cart";
-import image from "../../assets/photo_accueil.png";
 import "../Home/Home.scss";
 import "../../styles/global.scss";
 
@@ -8,7 +7,7 @@ const Home = () => {
     <>
     <div>
       <div className="homePicture">
-        <p style={{ backgroundImage:`url(${image})`}}>Chez vous, partout et ailleurs </p>
+        <p>Chez vous, partout et ailleurs </p>
       </div>
     </div>
       <Cart />

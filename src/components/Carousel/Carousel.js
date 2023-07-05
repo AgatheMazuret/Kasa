@@ -1,4 +1,4 @@
-import "../Carousel/Carousel.scss";
+import "../Carousel/carousel.scss";
 import React, { useState } from "react";
 
 const Carousel = ({ slides }) => {
