@@ -8,6 +8,7 @@ import Dropdown from "../../components/Dropdown/Dropdown";
 import Carousel from "../../components/Carousel/Carousel";
 import Host from "../../components/Host/host";
 
+
 function House() {
   // Récupération de l'id dans l'url
   const { id } = useParams();
@@ -43,14 +44,16 @@ function House() {
       <section>
         <div className="logement">
           <Carousel slides={logement.pictures} />
+
+          <Host host={logement.host} />
+
          
-            <Host host={logement.host} />
-          
+
           <h1>{logement.title}</h1>
           <p>{logement.location}</p>
 
           <Tags logement={logement} />
-          
+
           <div className="allDropdown">
             <Dropdown title="Equipements" content={mapEquipments} />
             <Dropdown title="Description" content={logement.description} />
