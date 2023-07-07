@@ -1,5 +1,9 @@
 @import "../../styles/global.scss";
 
+.banner {
+  display: flex;
+  justify-content: center;
+
 .homePicture {
   display: flex;
   justify-content: center;
@@ -26,4 +30,5 @@
       font-size: 24px;
     }
   }
+}
 }

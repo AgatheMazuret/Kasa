@@ -5,7 +5,7 @@ import "../../styles/global.scss";
 const Home = () => {
   return (
     <>
-    <div>
+    <div className="banner">
       <div className="homePicture">
         <p>Chez vous, partout et ailleurs </p>
       </div>
