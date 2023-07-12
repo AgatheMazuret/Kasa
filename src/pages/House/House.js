@@ -7,6 +7,7 @@ import "../House/House.scss";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Carousel from "../../components/Carousel/Carousel";
 import Host from "../../components/Host/host";
+import Rating from "../../components/Rating/Rating";
 
 function House() {
   // Récupération de l'id dans l'url
@@ -43,17 +44,19 @@ function House() {
       <section>
         <div className="logement">
           <Carousel slides={logement.pictures} />
+          <div className="upBlock">
           <div className="host">
             <Host host={logement.host} />
           </div>
 
           <div className="rating">
+            <Rating stars={logement.rating} />
 
           </div>
 
           <h1>{logement.title}</h1>
           <p>{logement.location}</p>
-
+          </div>
           <Tags logement={logement} />
 
           <div className="allDropdown">

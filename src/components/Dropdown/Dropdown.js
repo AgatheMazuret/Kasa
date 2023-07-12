@@ -13,7 +13,9 @@ function Dropdown({ title, content }) {
     <div className={`dropdown ${active && "active"}`} onClick={handleToogle}>
       <div className="dropdownBlock">
         <div className="title">{title} </div>
-        <div><i className="fa-solid fa-chevron-down"></i></div>
+        <div>
+          <i className="fa-solid fa-chevron-up"></i>
+          </div>
       </div>
         <div className="text">{content}</div>
       </div>
