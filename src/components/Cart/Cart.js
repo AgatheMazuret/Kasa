@@ -1,6 +1,6 @@
-import data from "../../data/logements.json";
-import { Link } from "react-router-dom";
-import "../Cart/Cart.scss";
+import data from "../../data/logements.json";  // Importation des données de logement depuis un fichier JSON
+import { Link } from "react-router-dom";  // Importation de Link depuis react-router-dom
+import "../Cart/Cart.scss";  // Importation des styles du composant Cart
 
 function Cart() {
   return (
@@ -8,9 +8,9 @@ function Cart() {
       <section>
         <div className="backgroundCart">
           {data.map((l) => (
-            <Link key={l.id} to={`/logement/${l.id}`}>
+            <Link key={l.id} to={`/logement/${l.id}`}>   {/* Création d'un lien vers la page de logement en utilisant l'id du logement*/}
               <div className="cart">
-                <p style={{ backgroundImage: `url(${l.cover})` }}>{l.title}</p>
+                <p style={{ backgroundImage: `url(${l.cover})` }}>{l.title}</p>   {/* Affichage du titre du logement avec une image de couverture*/}
               </div>
             </Link>
           ))}
@@ -22,4 +22,5 @@ function Cart() {
 
 export default Cart;
 
-<div></div>;
+
+

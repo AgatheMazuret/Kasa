@@ -2,8 +2,6 @@
 
 // LOGEMENTS
 .logement {
-
-  
   h1 {
     font-size: 36px;
     text-align: left;
@@ -27,14 +25,31 @@
     margin: 35px 0 60px 0;
   }
 
-
-  .host {
+  .upBlock {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    
-}
-}
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  
+    .host {
+      display: flex;
+      justify-content: flex-end;
+  
+      .rating {
+        display: flex;
+        justify-content: flex-end;
+        
+      }
+  
+      .titleLoc {
+        width: 69%;
+        display: flex;
+        align-items: flex-start;
 
+        
+      }
+    }
+  }
+}
 // FIN LOGEMENTS
