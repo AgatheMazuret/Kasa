@@ -1,6 +1,6 @@
 import data from "../../data/logements.json";
 import { Link } from "react-router-dom";
-import "../Cart/cart.scss";
+import "../Cart/Cart.scss";
 
 function Cart() {
   return (

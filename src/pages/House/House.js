@@ -6,7 +6,7 @@ import Error from "../Error/Error";
 import "../House/House.scss";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Carousel from "../../components/Carousel/Carousel";
-import Host from "../../components/Host/host";
+import Host from "../../components/Host/Host";
 import Rating from "../../components/Rating/Rating";
 
 function House() {
