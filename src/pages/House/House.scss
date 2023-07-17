@@ -2,27 +2,24 @@
 
 // LOGEMENTS
 .logement {
-  h1 {
-    font-size: 36px;
-    text-align: left;
-    margin-bottom: 0;
-    width: 70%;
-  }
-
-  p {
-    font-size: 18px;
-    text-align: left;
-    width: 70%;
-  }
+  
 
   .dropdown {
     width: 48%;
+
+    @media (max-width: 800px){
+      width: 95%;
+    }
   }
   .allDropdown {
     display: flex;
     flex-wrap: wrap;
     gap: 4%;
     margin: 35px 0 60px 0;
+    
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
   }
 
   .upBlock {
@@ -30,26 +27,42 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: column-reverse;
+    flex-direction: column;
   
     .host {
       display: flex;
       justify-content: flex-end;
+      margin-bottom: 21px;
+      width: 39%;
   
-      .rating {
-        display: flex;
-        justify-content: flex-end;
-        
-      }
-  
-      .titleLoc {
-        width: 69%;
-        display: flex;
-        align-items: flex-start;
-
-        
-      }
+      
     }
   }
 }
+.titleLoc {
+        width: 60%;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        
+        h1 {
+          font-size: 36px;
+          text-align: left;
+          margin-bottom: 0;
+          width: 100%;
+          @media (max-width: 800px){
+            font-size: 18px;
+          }
+        }
+      
+        p {
+          font-size: 18px;
+          text-align: left;
+          width: 100%;
+          @media (max-width: 800px){
+            font-size: 14px;
+          }
+        }
+        
+      }
 // FIN LOGEMENTS

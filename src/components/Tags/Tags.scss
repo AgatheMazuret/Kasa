@@ -3,15 +3,20 @@
 .tags {
    display: flex;
    h2 {
-    height: 25px;
     gap: 10px;
     color: white;
     font-size: 14px;
     font-weight: 500;
     background-color: $primary;
-    padding: 5px 10px 0 10px;
+    padding: 5px 10px 5px 10px;
     border-radius: 10px;
     margin: 2px;
+    @media (max-width: 800px){
+      text-align: center;
+      font-size: 10px;
+      margin: 5px;
+      padding:5px;
+    }
    }
 }
 

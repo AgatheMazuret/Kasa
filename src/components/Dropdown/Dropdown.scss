@@ -12,9 +12,15 @@
 	display: flex;
 	justify-content: space-between;
 	position: relative;
+  @media (max-width: 800px){
+    padding: 5px;
+  }
 }
 .title {
 	font-size: 18px;
+  @media (max-width: 800px){
+    font-size: 13px;
+  }
 }
 .text {
 	padding: 35px;
@@ -24,6 +30,10 @@
 	color: $primary;
 	font-size: 16px;
 	border-radius: 10px;
+  @media (max-width: 800px){
+    font-size: 12px;
+  }
+  
   
   .dropdown {
     width: 48%;
@@ -76,3 +86,6 @@
 	}
 }
 
+.active  i {
+  transform: rotate(180deg)
+}

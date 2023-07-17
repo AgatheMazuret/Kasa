@@ -10,10 +10,9 @@
     .logo {
       display: flex;
       justify-content: flex-start;
-      margin-left: 80px;
       width: 20%;
   
-      @media (max-width: 560px) {
+      @media (max-width: 800px) {
         width: 145px;
         height: 46px;
         margin-left: 20px;
@@ -24,7 +23,7 @@
       display: flex;
       justify-content: flex-end;
       color: $primary;
-      width: 68%;
+      width: 85%;
       gap: 5%;
   
       .accueil,

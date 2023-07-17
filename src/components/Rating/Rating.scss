@@ -1,3 +1,8 @@
 @import "../../styles/global.scss";
 
 
+.rating {
+    display: flex;
+    justify-content: flex-end;
+    width: 39%;
+}
