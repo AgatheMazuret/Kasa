@@ -1,4 +1,4 @@
-import "../Carousel/Carousel.scss";  // Importation des styles du composant Carousel
+import "../Carousel/carousel.scss";  // Importation des styles du composant Carousel
 import React, { useState } from "react";  // Importation de React et useState
 
 const Carousel = ({ slides }) => {

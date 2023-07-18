@@ -1,5 +1,5 @@
 import React from "react";
-import "../Error/Error.scss";
+import "../Error/error.scss";
 import { Link } from "react-router-dom";
 
 

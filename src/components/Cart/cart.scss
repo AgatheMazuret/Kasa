@@ -10,19 +10,28 @@
   justify-content: center;
   gap: 60px;
   flex-wrap: wrap;
-  margin: auto;
-  padding: 45px 0 56px 0;
+ // margin: auto;
+  // padding: 45px 0 56px 0;
+  .cart{
+    height: 340px;
+  }
+  a{
+    width: 100%;
+
+  }
 
   @media (max-width: 560px) {
     background-color: white;
   }
 
+  /*
   .cart {
-    width: 340px;
+    width: 100%;
     height: 340px;
     display: flex;
     align-items: flex-end;   
     }
+    */
   
   
    p {
@@ -43,11 +52,7 @@
     justify-content: flex-end;
     align-items: flex-start;
 
-    @media (max-width: 560px){
-      margin-left: 0;
-      width: 335px;
-      height: 255px;
-    }
+  
     
   }
 }

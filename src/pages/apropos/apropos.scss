@@ -1,25 +1,6 @@
 @import url(../apropos/apropos.scss);
 @import url(../../components/Dropdown/Dropdown.scss);
 
-.header {
-  width: 100%;
-  height: 68px;
-  display: flex;
-  padding: 45px 20px 55px 0;
-}
-
-.logo {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 0;
-  width: 32%;
-
-  @media (max-width: 560px) {
-    width: 145px;
-    height: 46px;
-    margin-left: 20px;
-  }
-}
 
 .aProposPicture {
   display: flex;

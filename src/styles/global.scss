@@ -1,6 +1,4 @@
-// Constantes
-$primary: #ff6060;
-
+$primary : #FF6060;
 a {
   text-decoration: none;
 }
@@ -12,3 +10,9 @@ body {
 }
 
 
+@media (max-width: 768px){
+  #root{
+    padding:0 10px 0 10px;
+  }
+} 
+  
