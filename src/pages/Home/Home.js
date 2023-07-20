@@ -10,7 +10,7 @@ const Home = () => {
         <p>Chez vous, partout et ailleurs </p>
       </div>
     </div>
-   <Cart />
+      <Cart />
     </>
   );
 };

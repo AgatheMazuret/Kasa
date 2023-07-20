@@ -1,6 +1,6 @@
 import data from "../../data/logements.json";  // Importation des données de logement depuis un fichier JSON
 import { Link } from "react-router-dom";  // Importation de Link depuis react-router-dom
-import "../Cart/cart.scss";  // Importation des styles du composant Cart
+import "../Cart/Cart.scss";  // Importation des styles du composant Cart
 
 function Cart() {
   return (

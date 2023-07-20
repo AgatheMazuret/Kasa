@@ -1,4 +1,6 @@
-$primary : #FF6060;
+// Constantes
+$primary: #ff6060;
+
 a {
   text-decoration: none;
 }
@@ -7,12 +9,9 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   font-family: Montserrat;
+  @media (max-width: 768px){
+    margin-left: 15px;
+  }
 }
 
 
-@media (max-width: 768px){
-  #root{
-    padding:0 10px 0 10px;
-  }
-} 
-  
