@@ -2,22 +2,25 @@
 
 // LOGEMENTS
 .logement {
-  
+  @media (max-width: 768px){
+    margin-left: 15px;
+  }
 
   .dropdown {
     width: 48%;
 
-    @media (max-width: 800px){
-      width: 95%;
+    @media (max-width: 768px){
+      width: 90%;
     }
   }
   .allDropdown {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 4%;
     margin: 35px 0 60px 0;
     
-    @media (max-width: 800px) {
+    @media (max-width: 768px) {
       flex-direction: column;
     }
   }
@@ -25,7 +28,7 @@
   .upBlock {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
     flex-direction: column;
   
@@ -33,24 +36,30 @@
       display: flex;
       justify-content: flex-end;
       margin-bottom: 21px;
-      width: 39%;
+      width: 100%;
   
       
     }
   }
+
+
+.rating {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 21px;
 }
+}
+
 .titleLoc {
         width: 60%;
-        display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        
+
         h1 {
           font-size: 36px;
           text-align: left;
           margin-bottom: 0;
           width: 100%;
-          @media (max-width: 800px){
+          @media (max-width: 768px){
             font-size: 18px;
           }
         }
@@ -59,7 +68,7 @@
           font-size: 18px;
           text-align: left;
           width: 100%;
-          @media (max-width: 800px){
+          @media (max-width: 768px){
             font-size: 14px;
           }
         }

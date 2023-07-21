@@ -14,9 +14,9 @@
 		font-size: 18px;
 		text-align: end;
 		color: $primary;
-		@media (max-width: 800px){
+		@media (max-width: 768px){
 			font-size: 12px;
-			
+			text-align: end;
 		}
 	}
 }
@@ -28,7 +28,7 @@
 		height: 64px;
 		width: 64px;
 		border-radius: 50%;
-		@media (max-width: 800px){
+		@media (max-width: 768px){
 			height: 32px;
 			width: 32px;
 		}
