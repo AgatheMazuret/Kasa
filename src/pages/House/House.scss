@@ -3,7 +3,7 @@
 // LOGEMENTS
 .logement {
   @media (max-width: 768px){
-    margin-left: 15px;
+    margin: 0 15px 0 15px;
   }
 
   .dropdown {
@@ -37,8 +37,6 @@
       justify-content: flex-end;
       margin-bottom: 21px;
       width: 100%;
-  
-      
     }
   }
 

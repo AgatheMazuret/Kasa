@@ -9,7 +9,7 @@ section {
       font-size: 255px;
       margin-bottom: 135px;
   
-      @media (max-width: 560px) {
+      @media (max-width: 768px) {
         font-size: 96px;
         margin-bottom: 113px;
       }
@@ -19,7 +19,7 @@ section {
       font-size: 36px;
       margin-bottom: 135px;
   
-      @media (max-width: 560px) {
+      @media (max-width: 768px) {
         font-size: 18px;
         margin-bottom: 113px;
       }
@@ -34,7 +34,7 @@ section {
         cursor: pointer;
       }
   
-      @media (max-width: 560px) {
+      @media (max-width: 768px) {
         font-size: 14px;
       }
     }
