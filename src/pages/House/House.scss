@@ -2,74 +2,74 @@
 
 // LOGEMENTS
 .logement {
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     margin: 0 15px 0 15px;
   }
 
   .dropdown {
     width: 48%;
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
       width: 90%;
     }
   }
+
   .allDropdown {
-    display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: 4%;
     margin: 35px 0 60px 0;
-    
+    @include wrap-flex;
+
     @media (max-width: 768px) {
       flex-direction: column;
     }
   }
+}
 
-  .upBlock {
-    width: 100%;
+.upBlock {
+  width: 100%;
+  flex-direction: column;
+  @include wrap-flex;
+
+  .titleLoc {
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    width: 60%;
+    justify-content: flex-start;
     flex-direction: column;
-  
-    .host {
-      display: flex;
-      justify-content: flex-end;
-      margin-bottom: 21px;
+
+    h1 {
+      font-size: 36px;
+      text-align: left;
+      margin-bottom: 0;
       width: 100%;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      text-align: left;
+      width: 100%;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
     }
   }
 
+  .host {
+    justify-content: flex-end;
+    margin-bottom: 21px;
+  }
 
-.rating {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 21px;
+  .rating {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 21px;
+  }
+
 }
-}
 
-.titleLoc {
-        width: 60%;
-
-        h1 {
-          font-size: 36px;
-          text-align: left;
-          margin-bottom: 0;
-          width: 100%;
-          @media (max-width: 768px){
-            font-size: 18px;
-          }
-        }
-      
-        p {
-          font-size: 18px;
-          text-align: left;
-          width: 100%;
-          @media (max-width: 768px){
-            font-size: 14px;
-          }
-        }
-        
-      }
 // FIN LOGEMENTS

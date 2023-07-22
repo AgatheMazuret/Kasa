@@ -1,6 +1,18 @@
 // Constantes
 $primary: #ff6060;
 
+//Mixin
+@mixin wrap-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 a {
   text-decoration: none;
 }
@@ -9,7 +21,4 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   font-family: Montserrat;
-  
 }
-
-

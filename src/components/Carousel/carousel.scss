@@ -17,9 +17,8 @@
 }
 
 .partPrev{
-    display: flex;
-    align-items: center;
     margin-left: 24px;
+    @include flex-center;
 }
 
 .counterImage{
@@ -31,9 +30,8 @@
 }
 
 .partNext{
-    display: flex;
-    align-items: center;
     margin-right: 24px;
+    @include flex-center;
 }
 
 .slide{

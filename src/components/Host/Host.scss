@@ -1,11 +1,15 @@
 @import "../../styles/global.scss";
 
-
-.hostNamePicture {
+.host {
 	display: flex;
-	align-items: center;
-	justify-content: flex-end;
+      align-items: end;
+      margin-bottom: 21px;
+      width: 35%;
+}
+.hostNamePicture {
+	align-items: end;
 	margin-top: 25px;
+	@include flex-center;
 }
 .hostName {
 	width: 100px;
