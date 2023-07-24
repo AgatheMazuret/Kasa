@@ -51,13 +51,11 @@ function House() {
             <div className="host">
               <Host host={logement.host} />{" "}
             </div>
-
+            <Tags logement={logement} />{" "}
             <div className="rating">
               <Rating stars={logement.rating} />{" "}
             </div>
-          <Tags logement={logement} />{" "}
           </div>
-          
           <div className="allDropdown">
             <Dropdown title="Equipements" content={mapEquipments} />{" "}
             <Dropdown title="Description" content={logement.description} />{" "}

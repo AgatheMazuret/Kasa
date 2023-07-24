@@ -28,12 +28,12 @@
 
 .upBlock {
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
   @include wrap-flex;
 
   .titleLoc {
     display: flex;
-    width: 60%;
+    width: 65%;
     justify-content: flex-start;
     flex-direction: column;
 
@@ -61,7 +61,10 @@
 
   .host {
     justify-content: flex-end;
-    margin-bottom: 21px;
+    .hostName {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    }
   }
 
   .rating {

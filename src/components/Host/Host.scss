@@ -3,17 +3,23 @@
 .host {
 	display: flex;
       align-items: end;
-      margin-bottom: 21px;
+      margin-top: 50px;
       width: 35%;
+	  justify-content: center;
+    height: 50px;
 }
 .hostNamePicture {
 	align-items: end;
-	margin-top: 25px;
 	@include flex-center;
+	
 }
 .hostName {
+	display: flex;
 	width: 100px;
 	margin-right: 6px;
+	@media (max-width: 768px){
+		width: 60px;
+	}
 	p {
 		font-size: 18px;
 		text-align: end;
@@ -26,7 +32,7 @@
 }
 .hostPicture {
 	height: 64px;
-	width: 64px;
+	@include flex-center;
 	img {
 		align-items: center;
 		height: 64px;
