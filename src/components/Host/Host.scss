@@ -2,14 +2,14 @@
 
 .host {
 	display: flex;
-      align-items: end;
+      align-items: flex-end;
       margin-top: 50px;
       width: 35%;
 	  justify-content: center;
     height: 50px;
 }
 .hostNamePicture {
-	align-items: end;
+	align-items: flex-end;
 	@include flex-center;
 	
 }

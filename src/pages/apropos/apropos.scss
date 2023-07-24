@@ -5,6 +5,9 @@
 .aProposPicture {
   margin-bottom: 38px;
   @include flex-center;
+  @media (max-width: 768px){
+    margin-bottom: 20px;
+  }
 }
 
 .aProposPicture img {
@@ -14,7 +17,7 @@
     object-fit: cover;
     filter: brightness(0.7);
     @media (max-width: 768px){
-      height: 115px;
+      height: 223px;
       margin: 0 15px 0 15px;
     }
   }

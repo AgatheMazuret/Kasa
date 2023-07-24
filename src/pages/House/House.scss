@@ -30,12 +30,16 @@
   width: 100%;
   flex-direction: row;
   @include wrap-flex;
+ 
 
   .titleLoc {
     display: flex;
     width: 65%;
     justify-content: flex-start;
     flex-direction: column;
+    @media (max-width: 768px){
+      width: 66%;
+    }
 
     h1 {
       font-size: 36px;
