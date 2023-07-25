@@ -3,7 +3,7 @@
 .dropdown {
   width: 48%;
   margin-bottom: 30px;
-  
+
 }
 
 .dropdownBlock {
@@ -35,22 +35,29 @@
   color: $primary;
   font-size: 16px;
   border-radius: 10px;
-  transform: scale(0);
-  transition: transform 450ms;
-  
-  
+  animation: fadein 2s;
+
   @media (max-width: 768px) {
     font-size: 12px;
     padding: 10px 10px;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0.3;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 }
 
 
 
 .dropdown.active .text {
-  display: block;
-  transform: scale(1);
-  transition: transform 450ms;
+  display: none;
+
 
 }
 
