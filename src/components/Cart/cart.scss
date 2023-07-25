@@ -7,7 +7,8 @@
   justify-content: center;
   gap: 80px;
   padding: 55px 0 55px 0;
-  @include wrap-flex; 
+  @include wrap-flex;
+
   @media (max-width: 768px) {
     background-color: white;
     gap: 0;

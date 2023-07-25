@@ -18,6 +18,7 @@
     align-items: center;
     gap: 4%;
     margin: 35px 0 60px 0;
+    align-items: first baseline;
     @include wrap-flex;
 
     @media (max-width: 768px) {
@@ -30,14 +31,15 @@
   width: 100%;
   flex-direction: row;
   @include wrap-flex;
- 
+
 
   .titleLoc {
     display: flex;
     width: 65%;
     justify-content: flex-start;
     flex-direction: column;
-    @media (max-width: 768px){
+
+    @media (max-width: 768px) {
       width: 66%;
     }
 
@@ -65,9 +67,10 @@
 
   .host {
     justify-content: flex-end;
+
     .hostName {
-    flex-wrap: wrap;
-    justify-content: flex-end;
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
   }
 

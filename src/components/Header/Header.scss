@@ -2,55 +2,60 @@
 
 // HEADER
 .header {
-    width: 100%;
-    height: 68px;
-    display: flex;
-    padding: 45px 0 55px 0;
-    @media (max-width: 768px){
-      margin-left: 15px;
-      margin-right: 15px;
-      padding: 20px 0 28px 0;
-    }
-   .logo {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  padding: 45px 0 55px 0;
+
+  @media (max-width: 768px) {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px 0 28px 0;
+  }
+
+  .logo {
     @include flex-center
-   }
-    .logo img {
-      display: flex;
-      width: 210px;
-      height: 68px;
-  
-      @media (max-width: 768px) {
-        width: 145px;
-        height: 46px;
-      }
+  }
+
+  .logo img {
+    display: flex;
+    width: 210px;
+    height: 68px;
+
+    @media (max-width: 768px) {
+      width: 145px;
+      height: 46px;
     }
-  
-    .nav {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: $primary;
+    width: 85%;
+    gap: 5%;
+
+    @media (max-width: 768px) {
+      width: 55%;
+    }
+
+    .accueil,
+    .aPropos {
       color: $primary;
-      width: 85%;
-      gap: 5%;
-      @media (max-width: 768px){
-        width: 55%;
+      font-size: 24px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline $primary;
+        cursor: pointer;
       }
-  
-      .accueil,
-      .aPropos {
-        color: $primary;
-        font-size: 24px;
-        text-decoration: none;
-  
-        &:hover {
-          text-decoration: underline $primary;
-          cursor: pointer;
-        }
-  
-        @media (max-width: 768px) {
-          font-size: 15px;
-        }
+
+      @media (max-width: 768px) {
+        font-size: 15px;
       }
     }
   }
-  // FIN DU HEADER
+}
+
+// FIN DU HEADER

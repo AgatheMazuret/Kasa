@@ -10,17 +10,14 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        
         <Route element={<Blank />}>
           <Route path="*" element={<Error />} />
         </Route>
-
         <Route element={<Default />}>
           <Route path="/" element={<Home />} />
           <Route path="/logement/:id" element={<House />} />
           <Route path="/apropos" element={<Apropos />} />
         </Route>
-
       </Routes>
     </BrowserRouter>
   );

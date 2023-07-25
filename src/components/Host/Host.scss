@@ -2,46 +2,53 @@
 
 .host {
 	display: flex;
-      align-items: flex-end;
-      margin-top: 50px;
-      width: 35%;
-	  justify-content: center;
-    height: 50px;
+	align-items: flex-end;
+	margin-top: 50px;
+	width: 35%;
+	justify-content: center;
+	height: 50px;
 }
+
 .hostNamePicture {
 	align-items: flex-end;
 	@include flex-center;
-	
+
 }
+
 .hostName {
 	display: flex;
 	width: 100px;
 	margin-right: 6px;
-	@media (max-width: 768px){
+
+	@media (max-width: 768px) {
 		width: 60px;
 	}
+
 	p {
 		font-size: 18px;
 		text-align: end;
 		color: $primary;
-		@media (max-width: 768px){
+
+		@media (max-width: 768px) {
 			font-size: 12px;
 			text-align: end;
 		}
 	}
 }
+
 .hostPicture {
 	height: 64px;
 	@include flex-center;
+
 	img {
 		align-items: center;
 		height: 64px;
 		width: 64px;
 		border-radius: 50%;
-		@media (max-width: 768px){
+
+		@media (max-width: 768px) {
 			height: 32px;
 			width: 32px;
 		}
 	}
 }
-
