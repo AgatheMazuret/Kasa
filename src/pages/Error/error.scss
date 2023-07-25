@@ -1,9 +1,12 @@
 @import '../../styles/global.scss';
 
 //PAGE ERREUR
+.textError{
+  text-align: center;
+}
 section {
   color: $primary;
-  text-align: center;
+
 
   h1 {
     font-size: 255px;

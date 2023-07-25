@@ -10,7 +10,7 @@
     width: 48%;
 
     @media (max-width: 768px) {
-      width: 90%;
+      width: 100%;
     }
   }
 
@@ -31,6 +31,13 @@
   width: 100%;
   flex-direction: row;
   @include wrap-flex;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
 
 
   .titleLoc {
@@ -72,12 +79,21 @@
       flex-wrap: wrap;
       justify-content: flex-end;
     }
+
+      @media (max-width: 768px) {
+      order:2;
+    }
   }
 
   .rating {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 21px;
+    
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+      order:1;
+    }
   }
 
 }

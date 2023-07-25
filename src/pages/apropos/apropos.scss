@@ -32,5 +32,6 @@
 .blockDropdown {
   width: 100%;
   flex-direction: column;
-  @include flex-center
+  @include flex-center;
+
 }

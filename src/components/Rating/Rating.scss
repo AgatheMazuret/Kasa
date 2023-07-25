@@ -6,4 +6,10 @@
   align-items: flex-end;
   margin-bottom: 21px;
   width: 35%;
+
+  @media (max-width: 768px) {
+    img{
+      padding-right:8px;
+    }
+  }
 }

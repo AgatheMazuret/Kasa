@@ -23,14 +23,16 @@
   }
 
   .cart {
-    width: 100%;
+    width: 380px;
+    height: 380px;
+    display: flex;
+    justify-content: center;
 
-    @media (min-width: 767px) {
-      width: 380px;
-      height: 380px;
-      display: flex;
-      justify-content: center;
+
+    @media (max-width: 768px) {
+      height: auto;
     }
+
   }
 
   p {
