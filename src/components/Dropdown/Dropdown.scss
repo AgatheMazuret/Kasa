@@ -44,7 +44,7 @@
 
   @keyframes fadein {
     from {
-      opacity: 0.3;
+      opacity: 0.2;
     }
 
     to {
@@ -63,12 +63,12 @@
 
 .dropdown i {
   transform: rotate(0deg);
-  transition: transform 450ms;
+  transition: transform 550ms;
 }
 
 .dropdown.active i {
-  transform: rotate(180deg);
-  transition: transform 450ms;
+  transform: rotate(-180deg);
+  transition: transform 550ms;
 }
 
 p {

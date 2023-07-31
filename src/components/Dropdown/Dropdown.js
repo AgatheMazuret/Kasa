@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import "../Dropdown/Dropdown.scss";
 
 function Dropdown({ title, content }) {
-  const [active, setActive] = useState(false);  // Déclaration d'un état pour gérer l'état actif du dropdown
+  const [active, setActive] = useState(true);  // Changer la valeur initiale à true pour replier par défaut
 
   const handleToggle = () => {
-    setActive(!active);  // Inversion de l'état actif lors du clic sur le dropdown
+    setActive(!active);
   };
 
   return (
     <div className={`dropdown ${active && "active"}`} onClick={handleToggle}>
       <div className="dropdownBlock">
-        <div className="title">{title} </div>  
-        <div><i className="fa-solid fa-chevron-up"></i></div>  
+        <div className="title">{title}</div>
+        <div><i className="fa-solid fa-chevron-down"></i></div>
       </div>
-      <div className="text">{content}</div>  {/* Contenu du dropdown */}
+      <div className="text">{content}</div>
     </div>
   );
 }
