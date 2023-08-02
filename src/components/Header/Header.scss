@@ -2,10 +2,10 @@
 
 // HEADER
 .header {
-  width: 100%;
+  width: 95%;
   height: 68px;
-  display: flex;
   padding: 45px 0 55px 0;
+  @include flex-center;
 
   @media (max-width: 768px) {
     padding: 0 15px;
@@ -13,9 +13,10 @@
   }
 
   .logo {
-    @include flex-center
+    @include flex-center;
+    margin-left: 60px;
   }
-
+ 
   .logo img {
     display: flex;
     width: 210px;

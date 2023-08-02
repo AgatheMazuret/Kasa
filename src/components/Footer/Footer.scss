@@ -1,7 +1,9 @@
 @import '../../styles/global.scss';
 
 //FOOTER
-
+.footer {
+  width: 100%;
+}
 .logoFooter {
   width: 100%;
   height: 180px;
@@ -10,7 +12,7 @@
   margin-top: 50px;
   padding-bottom: 30px;
   @media (max-width: 768px){
-    margin-top: 0;
+    margin-top: 20px;
   }
 
   img {
